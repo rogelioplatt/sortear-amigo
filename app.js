@@ -9,7 +9,12 @@ function agregarAmigo() {
         console.log("Lista de amigos: ", listaNombres);
 
         //llamamos a la funcion para actualizar la lista en el HTML
+<<<<<<< HEAD
         actualizarListaAmigos();
+=======
+        let listaActualizada = actualizarListaAmigos();
+        console.log(listaActualizada)
+>>>>>>> c77dc5b11ec20ad7701774fcf1e80afaba2f64de
 
         //Limpiamos el input despues de agregar al amigo
         document.getElementById('amigo').value = "";
@@ -20,7 +25,11 @@ function agregarAmigo() {
 }
 
 function actualizarListaAmigos() {
+<<<<<<< HEAD
     //obtener el elemento de la lista
+=======
+        //obtener el elemento de la lista
+>>>>>>> c77dc5b11ec20ad7701774fcf1e80afaba2f64de
     let listaHTML = document.getElementById('listaAmigos');
     
     //limpiar la lista existente para evitar duplicados
@@ -32,6 +41,10 @@ function actualizarListaAmigos() {
         itemLista.textContent = listaNombres[i];
         listaHTML.appendChild(itemLista);
     }
+<<<<<<< HEAD
+=======
+    return listaHTML;
+>>>>>>> c77dc5b11ec20ad7701774fcf1e80afaba2f64de
 }
 
 function sortearAmigo() {
