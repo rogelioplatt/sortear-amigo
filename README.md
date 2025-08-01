@@ -4,9 +4,8 @@
 
 Este es un sencillo juego web que te permite agregar nombres de amigos, sortear a uno de ellos de forma aleatoria y mostrar el resultado en la página. Es ideal para organizar sorteos de regalos en la oficina, la escuela o con tus amigos y familiares de una manera rápida y divertida.
 
-*(**Nota**: Reemplaza `https://i.imgur.com/your-screenshot-link.png` con la URL de una captura de pantalla de tu aplicación para que el README sea más visual.)*
-
------https://github.com/rogelioplatt/sortear-amigo/edit/main/README.md
+Captura de pantalla de la aplicación:
+https://github.com/rogelioplatt/sortear-amigo/blob/main/img/index.png
 
 ### 🚀 Tecnologías Utilizadas
 
