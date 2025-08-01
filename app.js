@@ -7,6 +7,10 @@ function agregarAmigo() {
     if (nombreAmigo.trim() != "") { 
         listaNombres.push(nombreAmigo)
         console.log("Lista de amigos: ", listaNombres);
+
+        //llamamos a la funcion para actualizar la lista en el HTML
+        actualizarListaAmigos();
+
         //Limpiamos el input despues de agregar al amigo
         document.getElementById('amigo').value = "";
     }else {
@@ -16,7 +20,18 @@ function agregarAmigo() {
 }
 
 function actualizarListaAmigos() {
+        //obtener el elemento de la lista
+    let listaHTML = document.getElementById('listaAmigos');
     
+    //limpiar la lista existente para evitar duplicados
+    listaHTML.innerHTML = "";
+
+    //iterar sobre la lista
+    for (let i = 0; i < listaNombres.length; i++){
+        let itemLista = document.createElement('li');
+        itemLista.textContent = listaNombres[i];
+        listaHTML.appendChild(itemLista);
+    }
 }
 
 function sortearAmigo() {
